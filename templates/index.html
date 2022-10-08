@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Index</title>
+    <!-- 引入刚刚下载的 ECharts 文件 -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.6.1.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/echarts.js') }}"></script>
+</head>
+
+<body>
+<!-- 为 ECharts 准备一个定义了宽高的 DOM -->
+<div id="main" style="width: 600px;height:400px;"></div>
+<p>{{ related_issue }}</p>
+
+<script type="text/javascript">
+    var data = {{related_issue|tojson}};
+    console.log(data)
+    var ROOT_PATH = 'https://echarts.apache.org/examples';
+
+    var chartDom = document.getElementById('main');
+    var myChart = echarts.init(document.getElementById('main'));
+    var option;
+
+    myChart.showLoading();
+    {#$.get(ROOT_PATH + '/data/asset/data/les-miserables.json', function (graph) {#}
+    myChart.hideLoading();
+    option = {
+        title: {
+            text: 'Les Miserables',
+            subtext: 'Default layout',
+            top: 'bottom',
+            left: 'right'
+        },
+        tooltip: {},
+        {#legend: [#}
+        {#    {#}
+        {#        // selectedMode: 'single',#}
+        {#        data: graph.categories.map(function (a) {#}
+        {#            return a.name;#}
+        {#        })#}
+        {#    }#}
+        {#],#}
+        series: [
+            {
+                name: 'Issue relation network',
+                type: 'graph',
+                layout: 'force',
+                data: data.nodes,
+                links: data.links,
+                categories: null,
+                roam: true,
+                label: {
+                    show: true,
+                    position: 'right'
+                },
+                force: {
+                    repulsion: 200,
+                    gravity: 0.01,
+                    edgeLength: 100,
+                    layoutAnimation: true
+                },
+
+            }
+        ]
+    };
+    myChart.setOption(option);
+    option && myChart.setOption(option);
+
+    // 点击元素跳转事件
+    //TODO: 修复点击关系线也会出现弹窗的问题
+    myChart.on('click', function (params) {
+        const r = confirm("Click yes if you want to go to the issue page");
+        if (r == true) {
+            window.location.href = params.data.url
+        }
+    })
+</script>
+
+
+</body>
+</html>
