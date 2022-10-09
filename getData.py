@@ -39,7 +39,7 @@ def parseExcelDataByName(projectName):
             # update last issue name
             last_row = row_data[3]
 
-    # 去重算法
+    # nodes去重
     temp_list = [related_issue['nodes'][0]]
     for i in related_issue['nodes'][1:]:
         add = True
@@ -54,8 +54,25 @@ def parseExcelDataByName(projectName):
     # print(len(related_issue['nodes']))
     # print(temp_list)
     # print(related_issue['nodes'])
-
     related_issue["nodes"] = temp_list
+
+    # links去重
+    temp_list = [related_issue['links'][0]]
+
+    for i in related_issue['links'][1:]:
+        add = True
+        for x in temp_list[0:]:
+            if i['source'] == x['source'] and i['target'] == x['target']:
+                add = False
+            elif i['source'] == x['target'] and i['target'] == x['source']:
+                add = False
+
+        if add:
+            temp_list.append(i)
+
+    print(len(temp_list),len(related_issue['links']))
+
+    related_issue["links"] = temp_list
 
     # print(len(related_issue['nodes']))
 
