@@ -36,6 +36,7 @@ def issue_relattion_page():
     # }
 
     related_issue = parseExcelDataByName('botpress')
+    print(type(related_issue))
     return render_template("index.html", related_issue=related_issue)
 
 

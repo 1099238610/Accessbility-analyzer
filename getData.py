@@ -74,13 +74,29 @@ def parseExcelDataByName(projectName):
 
     related_issue["links"] = temp_list
 
-    # print(len(related_issue['nodes']))
+    # 添加不存在list中的issue
+    for i in related_issue['links'][1:]:
+        s_add = True
+        t_add = True
+        for x in related_issue['nodes'][0:]:
+            if i['source'] == x['name']:
+                s_add = False
+            if i['target'] == x['name']:
+                t_add = False
+
+        if s_add:
+            temp_node = temp_node = {'name': i['source'], 'type': 'IDK', 'symbolSize' :30, 'url': 'IDK'}
+            related_issue["nodes"].append(temp_node)
+        if t_add:
+            temp_node = temp_node = {'name': i['target'], 'type': 'IDK', 'symbolSize': 30,
+                                     'url': 'IDK'}
+            related_issue["nodes"].append(temp_node)
 
     with open('data.json' ,"w") as f:
 
         json.dump(related_issue,f,indent=4,ensure_ascii=False)
 
-    return json.dumps(related_issue)
+    return related_issue
 
 data11 = parseExcelDataByName('botpress')
 
