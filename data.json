@@ -1,0 +1,244 @@
+{
+    "nodes": [
+        {
+            "name": "#5423",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/issues/5423"
+        },
+        {
+            "name": "#2170",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2170"
+        },
+        {
+            "name": "#4326",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4326"
+        },
+        {
+            "name": "#4504",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4504"
+        },
+        {
+            "name": "#3265",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/3265"
+        },
+        {
+            "name": "#3320",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/3320"
+        },
+        {
+            "name": "#11446",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/11446"
+        },
+        {
+            "name": "#5763",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5763"
+        },
+        {
+            "name": "#2980",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2980"
+        },
+        {
+            "name": "#11429",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/11429"
+        },
+        {
+            "name": "#5533",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5533"
+        },
+        {
+            "name": "#5253",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5253"
+        },
+        {
+            "name": "#5060",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5060"
+        },
+        {
+            "name": "#5051",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5051"
+        },
+        {
+            "name": "#4567",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4567"
+        },
+        {
+            "name": "#5423",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5423"
+        },
+        {
+            "name": "#2170",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2170"
+        },
+        {
+            "name": "#2980",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2980"
+        },
+        {
+            "name": "#5718",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5718"
+        },
+        {
+            "name": "#5714",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5714"
+        },
+        {
+            "name": "#5685",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5685"
+        },
+        {
+            "name": "#4469",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4469"
+        },
+        {
+            "name": "#3334",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/3334"
+        },
+        {
+            "name": "#2579",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2579"
+        },
+        {
+            "name": "#2280",
+            "type": "Closed",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/2280"
+        },
+        {
+            "name": "#4464",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4464"
+        },
+        {
+            "name": "#5584",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5584"
+        },
+        {
+            "name": "#5108",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/5108"
+        },
+        {
+            "name": "#4742",
+            "type": "Open",
+            "symbolSize": 30,
+            "url": "https://github.com/botpress/botpress/issues/4742"
+        }
+    ],
+    "links": [
+        {
+            "source": "#5423",
+            "target": "#5564"
+        },
+        {
+            "source": "#5423",
+            "target": "#5595"
+        },
+        {
+            "source": "#4326",
+            "target": "#4322"
+        },
+        {
+            "source": "#5533",
+            "target": "#5563"
+        },
+        {
+            "source": "#5533",
+            "target": "#5595"
+        },
+        {
+            "source": "#5253",
+            "target": "#5349"
+        },
+        {
+            "source": "#5060",
+            "target": "#5123"
+        },
+        {
+            "source": "#5051",
+            "target": "#2244"
+        },
+        {
+            "source": "#5051",
+            "target": "#5736"
+        },
+        {
+            "source": "#5051",
+            "target": "#5716"
+        },
+        {
+            "source": "#5423",
+            "target": "#5564"
+        },
+        {
+            "source": "#5423",
+            "target": "#5595"
+        },
+        {
+            "source": "#4469",
+            "target": "#4631"
+        },
+        {
+            "source": "#4469",
+            "target": "#4620"
+        },
+        {
+            "source": "#5584",
+            "target": "#5647"
+        },
+        {
+            "source": "#4742",
+            "target": "#5467"
+        }
+    ]
+}
