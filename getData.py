@@ -39,7 +39,25 @@ def parseExcelDataByName(projectName):
             # update last issue name
             last_row = row_data[3]
 
+    # 去重算法
+    temp_list = [related_issue['nodes'][0]]
+    for i in related_issue['nodes'][1:]:
+        add = True
+        for x in temp_list[0:]:
+            if i['name'] == x['name']:
+                add = False
 
+        if add:
+            temp_list.append(i)
+
+    # print(len(temp_list))
+    # print(len(related_issue['nodes']))
+    # print(temp_list)
+    # print(related_issue['nodes'])
+
+    related_issue["nodes"] = temp_list
+
+    # print(len(related_issue['nodes']))
 
     with open('data.json' ,"w") as f:
 
@@ -47,5 +65,6 @@ def parseExcelDataByName(projectName):
 
     return json.dumps(related_issue)
 
+data11 = parseExcelDataByName('botpress')
 
-print(parseExcelDataByName('botpress'))
+# print(data11)
